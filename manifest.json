@@ -10,16 +10,15 @@
   "commands": {
     "Duplicate Tabs": {}
   },
-  "description": "Prevent opening tabs with urls, which are already open within the same context",
+  "description": "Auto close tabs with URLs, which are already open within the same context",
   "icons": {
     "128": "icon.png"
   },
   "manifest_version": 2,
-  "name": "Dont Open Duplicate Tabs",
+  "name": "Auto Close Duplicate Tabs",
   "options_ui": {
     "page": "options.html"
   },
-  "permissions": ["menus", "cookies", "storage", "tabs"],
-  "optional_permissions": ["notifications"],
-  "version": "1.8.22"
+  "permissions": ["cookies", "storage", "tabs"],
+  "version": "1.9.22"
 }
