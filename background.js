@@ -60,7 +60,7 @@ async function delDups() {
   if (!isActive) {
     return;
   }
-  const allTabs = await browser.tabs.query({});
+  const allTabs = await browser.tabs.query({ currentWindow: true });
 
   // check if any tab is still loading , if so we wait
   if (allTabs.some((t) => t.status !== "complete")) {

@@ -20,5 +20,5 @@
     "page": "options.html"
   },
   "permissions": ["cookies", "storage", "tabs"],
-  "version": "1.9.22"
+  "version": "1.9.23"
 }
