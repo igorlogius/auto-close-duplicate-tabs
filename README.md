@@ -4,6 +4,8 @@ Auto close tabs with URLs, which are already open within the same context
 
 ### [Click here to report a bug, make a suggestion or ask a question](https://github.com/igorlogius/igorlogius/issues/new/choose)
 
-<b>Demo Video</b>
+<b>Short Demo Video</b>
 
-tbd.
+https://github.com/user-attachments/assets/ecf1bcd0-f6c5-484c-b33a-b8d9f896d151
+
+
