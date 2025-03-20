@@ -4,7 +4,7 @@ const manifest = browser.runtime.getManifest();
 const extname = manifest.name;
 
 let delayTimerId = null;
-let isActive = false;
+let isActive = true;
 let ready = false;
 let regexList = null;
 
@@ -60,7 +60,10 @@ async function delDups() {
   if (!isActive) {
     return;
   }
-  const allTabs = await browser.tabs.query({ currentWindow: true });
+  const allTabs = await browser.tabs.query({
+    currentWindow: true,
+    pinned: false,
+  });
 
   // check if any tab is still loading , if so we wait
   if (allTabs.some((t) => t.status !== "complete")) {
