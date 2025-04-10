@@ -8,6 +8,17 @@ let isActive = true;
 let ready = false;
 let regexList = null;
 
+function serializeSearchParams(searchParams) {
+  // Sort the key/value pairs
+  searchParams.sort();
+  let out = searchParams.toString();
+
+  if (out !== "") {
+    out = "?" + out;
+  }
+  return out;
+}
+
 async function buildRegExList() {
   const out = [];
   (await getFromStorage("string", "matchers", ""))
@@ -79,7 +90,12 @@ async function delDups() {
 
   for (const t of allTabs) {
     if (!isOnRegexList(t.url)) {
-      const key = t.cookieStoreId + "_" + t.url;
+      const urlobj = new URL(t.url);
+      tab_url =
+        urlobj.origin +
+        urlobj.pathname +
+        serializeSearchParams(urlobj.searchParams);
+      const key = t.cookieStoreId + "_" + tab_url;
 
       if (!dup_groups.has(key)) {
         dup_groups.set(key, []);
