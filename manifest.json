@@ -7,9 +7,6 @@
   "browser_action": {
     "default_area": "navbar"
   },
-  "commands": {
-    "Duplicate Tabs": {}
-  },
   "description": "Auto close tabs with URLs, which are already open within the same context",
   "icons": {
     "128": "icon.png"
@@ -20,5 +17,5 @@
     "page": "options.html"
   },
   "permissions": ["cookies", "storage", "tabs"],
-  "version": "1.9.26"
+  "version": "1.9.27"
 }

@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/ecf1bcd0-f6c5-484c-b33a-b8d9f896d151
 
 ### AMO DESCRIPTION
 
-- [Short Video Demo](https://github.com/igorlogius/auto-close-duplicate-tabs/)
+- [Short Demo Video](https://github.com/igorlogius/auto-close-duplicate-tabs/)
 - Use the toolbar button to pause/unpause
 - Tabs will closed from left to right unless a duplicate is active in which case the active duplicate will be keeped instead  
 - [Some additional notes & hints](https://github.com/igorlogius/igorlogius/blob/main/Additional-Notes.md)
